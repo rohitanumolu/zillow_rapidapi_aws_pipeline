@@ -3,7 +3,7 @@
 Steps to launch the instance:
 1. Navigate to [EC2 console](https://console.aws.amazon.com/ec2/) and choose Launch instance.
 2. Provide a name, description and choose Ubuntu as Amazon Machine Image (you can choose to select other images/OS but make sure you change commands while running in terminal accordingly)
-3. Choose Instance type to be **t2.medium**. Though this is not free tier, this is minimum requirement to run airflow. 
+3. Choose Instance type to be `t2.medium`. Though this is not free tier, this is minimum requirement to run airflow. 
 4. Under Key pair (login), create a new key pair and download the .pem file.
 5. Next to Network settings, choose Edit. Here select traffic from HTTPS and HTTP. We need to provide or open other ports for other servers which we will do later. 
 6. Keep other sections default and Launch instance. It might take a minute or two for the instance to start running. 
@@ -28,7 +28,7 @@ Steps to launch the instance:
 ```bash
 airflow standalone
 ```
-Open your browser, copy the IP4 of EC2 instance and add `**:8080**` (airflow port) and open the link. This will not be successful because we did not open the 8080 port of the EC2 instance. 
+Open your browser, copy the IP4 of EC2 instance and add `:8080` (airflow port) and open the link. This will not be successful because we did not open the 8080 port of the EC2 instance. 
 
 * Open the port by following these steps. Select the instance in AWS portal, select security, security groups and Edit inbound rules. Add rule, custom TCP, port name 8080 and source Anywhere IP4. 
 
