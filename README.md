@@ -18,6 +18,9 @@ The project was implented to interlink different cloud services in AWS in a sing
 5. Load the cleaned data also into [Amazon RDS](https://aws.amazon.com/rds/) for future projects. 
 6. Orchestrate with [Airflow](https://airflow.apache.org) in [Amazon EC2](https://aws.amazon.com/ec2/instance-types/).
 
+## Final DAG
+<img src="https://github.com/rohitanumolu/zillow_rapidapi_aws_pipeline/blob/main/images/dag.png" width=100% height=100%>
+
 ## Future steps
 
 * Create a dashboard using [Looker](https://cloud.google.com/looker), [PowerBI](https://powerbi.microsoft.com/en-gb/) or [Google Data Studio](https://datastudio.google.com).
