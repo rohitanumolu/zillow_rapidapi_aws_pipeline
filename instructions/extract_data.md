@@ -13,9 +13,11 @@
 	"X-RapidAPI-Host": Paste from RapidAPI code snippet"
  }
 ```
- 
 7. Now when you refresh airflow UI (if closed, you can use airflow standalone to run again), this new dag with name **zillow_rapidapi_dag** should we available. 
 8. Check the graph, code in UI and trigger it. This should start and then extract the data and load it into S3 bucket created.
+
+> **NOTE**: Before you run the dag, make sure you give your EC2 permissions to access S3. For this, Go to IAM, Create role, Select AWS service and in next section EC2 and press next. Now add **AmazonS3FullAccess**. Go next, give it a name and create the role. Now go to your EC2, Actions, Security, Modify IAM role and chose the role you just created. 
+
 
 ---
 

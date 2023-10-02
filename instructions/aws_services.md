@@ -21,7 +21,9 @@ For this project, we can only use Postgres local (or in Docker) instead of cloud
 
 2. This step is not mandatory for this project but recommended. Setup/Create an IAM user which will have its own set of permissions (in this case, AdministratorAccess). Generally in production, you should only use the root account for tasks that can only be done with the root account. Save the credentials (you can download the .csv file while creating the user) and login as the IAM User. Steps to create a new user can be found [here](https://www.techtarget.com/searchcloudcomputing/tutorial/Step-by-step-guide-on-how-to-create-an-IAM-user-in-AWS). Make sure you select the correct policy (AdministratorAccess).
 
-3. We will continue the setup in next instuction set. 
+3. Also create access keys for the user and download the csv file. To create you can select the user/security credentials and in access keys section, create access key. 
+
+4. We will continue the setup in next instuction set. 
 
 ---
 
