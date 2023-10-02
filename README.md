@@ -32,4 +32,14 @@ The project was implented to interlink different cloud services in AWS in a sing
 
 As AWS offer a free tier, this wouldn't cost you much. The minimum requirement for EC2 instance to run Airflow is **t2.medium** which would cost. From my experience developin this project, the instance ran for around 25-30 hours and it cost me less than a $. Redshift and RDS are not free (you can use the serverless options). More details about pricing will be updated soon. However, please check [AWS free tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) limits, as this may change.
 
-1. [Overview](instructions/introduction.md)
+1. [Introduction](instructions/introduction.md)
+2. [Setting up Rapid API](instructions/rapidapi_setup.md)
+3. [AWS Services](instructions/aws_services.md)
+4. [Setup EC2 and connect to it with VSCode (ssh)](instructions/ec2_setup.md)
+5. [Extracting data from API and loading to S3 bucket](instructions/extract_data.md)
+6. [Cleaning raw data using AWS Lambda](instructions/lambda_transformation.md)
+7. [Setting up redshift cluster](instructions/redshift_setup.md)
+8. [Setting up RDS database](instructions/rds_setup.md)
+9. [Final run](instructions/final.md)
+
+

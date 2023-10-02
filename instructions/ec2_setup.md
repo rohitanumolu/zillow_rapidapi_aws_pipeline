@@ -12,7 +12,7 @@ Steps to launch the instance:
 
 1. You can connect to the EC2 instance from your browser. Simple select the instance, choose connect and in the four options select EC2 instance Connect option annd press connect. A new tab opens connecting to EC2 instance. You can now run any bash commands that you want.
 2. Though this is convenient, it is not so friendly especially when you want to create files (nano is not something, I prefer).
-3. Connecting to VS Code, would provide several advantages (a very familiar and user friendlt development environment). The steps to do this can be found in this [blog]().  
+3. Connecting to VS Code, would provide several advantages (a very familiar and user friendlt development environment). The steps to do this can be found in this [blog]() - Upcoming.  
 
 ## Installing dependenices 
 
