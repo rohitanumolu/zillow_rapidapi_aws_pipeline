@@ -9,6 +9,8 @@ The project was implented to interlink different cloud services in AWS in a sing
 
 ## Architecture
 
+<img src="https://github.com/rohitanumolu/zillow_rapidapi_aws_pipeline/blob/main/images/pipeline.png" width=70% height=70%>
+
 1. Extract zillow data using [RapidAPI](https://rapidapi.com/s.mahmoud97/api/zillow56/)
 2. Load the bronze layer (raw) of data into [AWS S3](https://aws.amazon.com/s3/)
 3. Utilize [AWS Lambda](https://aws.amazon.com/lambda/) to clean the raw data and load it into a new [AWS S3](https://aws.amazon.com/s3/) bucket.
