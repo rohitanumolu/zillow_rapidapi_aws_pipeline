@@ -118,7 +118,7 @@ with DAG('zillow_rapidapi_dag',
                 cleaned_s3_to_redshift = S3ToRedshiftOperator(
                     task_id="task_cleaned_s3_to_redshift",
                     aws_conn_id='aws_s3_conn',
-                    redshift_conn_id='reddshift_conn',
+                    redshift_conn_id='redshift_conn',
                     s3_bucket=S3_BUCKET,
                     s3_key='{{ti.xcom_pull("task_extract_zillow_data_rapidapi_to_S3")[1]}}', ###filename
                     schema="PUBLIC",

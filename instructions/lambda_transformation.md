@@ -17,7 +17,7 @@
 
 ---
 
-[Previous Step](extract_data.md) | [Next Step](redshift_setpu.md)
+[Previous Step](extract_data.md) | [Next Step](redshift_setup.md)
 
 or
 
