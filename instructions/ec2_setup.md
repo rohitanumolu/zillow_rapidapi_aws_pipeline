@@ -24,7 +24,7 @@ Steps to launch the instance:
 
 * If you ran all the commands, you installed airflow. To check if all is good, run
 > airflow standalone
-Open your browser, copy the IP4 of EC2 instance and add **:8080** (airflow port) and open the link. This will not be successful because we did not open the 8080 port of the EC2 instance. 
+* Open your browser, copy the IP4 of EC2 instance and add **:8080** (airflow port) and open the link. This will not be successful because we did not open the 8080 port of the EC2 instance. 
 
 * Open the port by following these steps. Select the instance in AWS portal, select security, security groups and Edit inbound rules. Add rule, custom TCP, port name 8080 and source Anywhere IP4. 
 
@@ -35,7 +35,7 @@ Open your browser, copy the IP4 of EC2 instance and add **:8080** (airflow port)
 
 ---
 
-[Previous Step](aws_services.md) | [Next Step]()
+[Previous Step](aws_services.md) | [Next Step](extract_data.md)
 
 or
 
