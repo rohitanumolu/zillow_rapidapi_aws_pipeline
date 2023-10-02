@@ -48,3 +48,4 @@ As AWS offer a free tier, this wouldn't cost you much. The minimum requirement f
 9. [Final run](instructions/final.md)
 
 
+> **NOTE**: If you have questions or ideas or stuck in any step, you can email me the issue `rohithanumolu@gmail.com` and I will try to help with what I can. 
