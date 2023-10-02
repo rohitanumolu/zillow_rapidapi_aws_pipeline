@@ -19,7 +19,7 @@ The project was implented to interlink different cloud services in AWS in a sing
 6. Orchestrate with [Airflow](https://airflow.apache.org) in [Amazon EC2](https://aws.amazon.com/ec2/instance-types/).
 
 ## Final DAG
-<img src="https://github.com/rohitanumolu/zillow_rapidapi_aws_pipeline/blob/main/images/dag.png" width=100% height=130%>
+<img src="https://github.com/rohitanumolu/zillow_rapidapi_aws_pipeline/blob/main/images/dag.png" width=100% height=170%>
 
 ## Future steps
 
