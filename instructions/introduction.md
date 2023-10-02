@@ -12,7 +12,7 @@ Proceed to the next step to get started.
 
 ---
 
-[Next Step](reddit.md)
+[Next Step](rapidapi_setup.md)
 
 or
 

@@ -13,3 +13,20 @@ We'll be using different AWS services including EC2, Lambda, S3, Redshift and RD
 * [Redshift](https://aws.amazon.com/redshift/) is a Data Warehousing service. Utilising its Massively Parallel Processing (MPP) technology, Redshift is able to execute operations on large datasets at fast speeds. It's based on PostgreSQL, so we can use SQL to run operations here. We can store the data in this and use a reporting tool like Power BI, Looker, etc. 
 
 * [Amazon RDS](https://aws.amazon.com/rds/) is a managed service that makes it easy to set up, operate, and scale a relational database in the cloud. We store the cleaned data in RDS for future projects. 
+
+For this project, we can only use Postgres local (or in Docker) instead of cloud to make it easy. But, it is a good practive to work with cloud tools and get exposure. 
+
+## Setup 
+1. Setup your free tier [AWS account](https://aws.amazon.com/getting-started/guides/setup-environment/module-one/)
+
+2. This step is not mandatory for this project but recommended. Setup/Create an IAM user which will have its own set of permissions (in this case, AdministratorAccess). Generally in production, you should only use the root account for tasks that can only be done with the root account. Save the credentials (you can download the .csv file while creating the user) and login as the IAM User. Steps to create a new user can be found [here](https://www.techtarget.com/searchcloudcomputing/tutorial/Step-by-step-guide-on-how-to-create-an-IAM-user-in-AWS). Make sure you select the correct policy (AdministratorAccess).
+
+3. We will continue the setup in next instuction set. 
+
+---
+
+[Previous Step](rapidapi_setup.md) | [Next Step](ec2_setup.md)
+
+or
+
+[Back to main](https://github.com/rohitanumolu/zillow_rapidapi_aws_pipeline/tree/main)
