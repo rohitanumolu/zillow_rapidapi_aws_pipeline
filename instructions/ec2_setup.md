@@ -19,12 +19,16 @@ Steps to launch the instance:
 * Once you connect to the instance (open a terminal if in VS Code), run all the commands in [dependencies.txt](https://github.com/rohitanumolu/zillow_rapidapi_aws_pipeline/tree/main/dependencies.txt) to install all the dependencies needed to run the project. 
 
 * In addition, we create a virtual environment to install and develop the entire project in. 
-> python3 -m venv zillow_rapidapi_venv
-> source zillow_rapidapi_venv/bin/activate
+```bash
+ python3 -m venv zillow_rapidapi_venv
+ source zillow_rapidapi_venv/bin/activate
+```
 
 * If you ran all the commands, you installed airflow. To check if all is good, run
-> airflow standalone
-* Open your browser, copy the IP4 of EC2 instance and add **:8080** (airflow port) and open the link. This will not be successful because we did not open the 8080 port of the EC2 instance. 
+```bash
+airflow standalone
+```
+Open your browser, copy the IP4 of EC2 instance and add **:8080** (airflow port) and open the link. This will not be successful because we did not open the 8080 port of the EC2 instance. 
 
 * Open the port by following these steps. Select the instance in AWS portal, select security, security groups and Edit inbound rules. Add rule, custom TCP, port name 8080 and source Anywhere IP4. 
 
