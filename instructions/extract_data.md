@@ -7,8 +7,8 @@
 5. We created two task, one is to extract data from API to EC2 and second one is to move the file to S3 bucket created. 
 6. Also make sure you add your bucket name in second task and then create a **config_api.json** in airflow folder with the RapidAPI key and host. 
 > {
-> 	"X-RapidAPI-Key": <Paste from RapidAPI code snippet>,
-> 	"X-RapidAPI-Host": <Paste from RapidAPI code snippet>"
+> 	"X-RapidAPI-Key": Paste from RapidAPI code snippet,
+> 	"X-RapidAPI-Host": Paste from RapidAPI code snippet"
 > }
 7. Now when you refresh airflow UI (if closed, you can use airflow standalone to run again), this new dag with name **zillow_rapidapi_dag** should we available. 
 8. Check the graph, code in UI and trigger it. This should start and then extract the data and load it into S3 bucket created.
