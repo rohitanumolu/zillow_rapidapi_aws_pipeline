@@ -9,7 +9,6 @@ The project was implented to interlink different cloud services in AWS in a sing
 
 ## Architecture
 
-
 1. Extract zillow data using [RapidAPI](https://rapidapi.com/s.mahmoud97/api/zillow56/)
 2. Load the bronze layer (raw) of data into [AWS S3](https://aws.amazon.com/s3/)
 3. Utilize [AWS Lambda](https://aws.amazon.com/lambda/) to clean the raw data and load it into a new [AWS S3](https://aws.amazon.com/s3/) bucket.
@@ -17,7 +16,18 @@ The project was implented to interlink different cloud services in AWS in a sing
 5. Load the cleaned data also into [Amazon RDS](https://aws.amazon.com/rds/) for future projects. 
 6. Orchestrate with [Airflow](https://airflow.apache.org) in [Amazon EC2](https://aws.amazon.com/ec2/instance-types/).
 
+## Future steps
 
+* Create a dashboard using [Looker](https://cloud.google.com/looker), [PowerBI](https://powerbi.microsoft.com/en-gb/) or [Google Data Studio](https://datastudio.google.com).
+* Transform the data in Amazon Redshift using [dbt](https://www.getdbt.com)
+* Create AWS resources with [Terraform](https://www.terraform.io) instead of manually creating them. 
 
+## Setup
 
+ I've tried to provide step-by-step instructions to setup and develop this pipeline. You can follow below steps to setup pipeline. Feel free to make improvements/changes.
 
+> **NOTE**: The entire project was developed in a AWS EC2 instance (ubuntu). Technically, you would not need to install anything in your local PC. If you want to launch any other instance other than ubuntu, then you might need to change some commands. 
+
+As AWS offer a free tier, this wouldn't cost you much. The minimum requirement for EC2 instance to run Airflow is **t2.medium** which would cost. From my experience developin this project, the instance ran for around 25-30 hours and it cost me less than a $. Redshift and RDS are not free (you can use the serverless options). More details about pricing will be updated soon. However, please check [AWS free tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) limits, as this may change.
+
+1. [Overview](instructions/introduction.md)
